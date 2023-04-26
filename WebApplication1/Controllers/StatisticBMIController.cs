@@ -76,9 +76,9 @@ namespace WebApplication1.Controllers
                 {
                     if (ratingModels[i].percent < ratingModels[j].percent)
                     {
-                        var swap = ratingModels[i].percent;
-                        ratingModels[i].percent = ratingModels[j].percent;
-                        ratingModels[j].percent = swap;
+                        var swap = ratingModels[i];
+                        ratingModels[i] = ratingModels[j];
+                        ratingModels[j] = swap;
                     }
                 }
             }
